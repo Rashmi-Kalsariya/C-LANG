@@ -1,0 +1,110 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int a,b,c;
+	clrscr();
+
+	printf("Enter a: ");
+	canf("%d",&a);
+	printf("Enter b: ");
+	scanf("%d",&b);
+	printf("Enter c: ");
+	scanf("%d",&c);
+
+	(a<b)
+		?(a<c)
+			?printf("A is minimum")
+			:printf("C is minimum")
+		:(b<c)
+			?printf("B is minimum")
+			:printf("C is minimum");
+
+       getch();
+}
+
+
+
+SECOND PROGRAM
+
+
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int a;
+	clrscr();
+
+	printf("choose language..........\n");
+	printf("1) for English\n");
+	printf("2) for Hindi\n");
+	printf("3) for Gujarati\n");
+	printf("Enter your choice:");
+	scanf("%d",&a);
+
+	switch(a)
+	{
+
+		case 1:
+			printf("\n1) for Internet Recharge\n");
+			printf("2) for Top up Recharge\n");
+			printf("3) for Special Recharge\n");
+			printf("Enter your choice:");
+			scanf("%d",&a);
+       switch(a)
+       {
+		case 1:
+			printf("\nYou have successfully done Internet Recharge!");
+			break;
+		case 2:
+			printf("\nYou have successfully done Top up Recharge!");
+			break;
+		case 3:
+			printf("\nYou have successfully done Special Recharge!");
+			break;
+       }
+       break;
+
+	    case 2:
+			printf("\n\n1) Internet Recharge ke liye\n");
+			printf("2) Top up Recharge ke liye\n");
+			printf("3) Special Recharge ke liye\n");
+			printf("Enter your choice:");
+			scanf("%d",&a);
+			switch(a)
+	  {
+		case 1:
+			printf("\nAapne safaltapurvak Internet Recharge kar liya hai!");
+			break;
+		case 2:
+			printf("\nAapne safaltapurvak Top up Recharge kar liya hai!");
+			break;
+		case 3:
+			printf("\nAapne safaltapurvak Special Recharge kar liya hai!");
+			break;
+	  }
+	  break;
+
+	  case 3:
+		   printf("\n1) Internet Na Recharge Mate\n");
+		   printf("2) Top up Na Recharge Mate\n");
+		   printf("3) Special Prakar Na Recharge Mate\n");
+		   printf("Enter your choice:");
+		   scanf("%d",&a);
+		   switch(a)
+		   {
+			case 1:
+				printf("\nTamaru Internet Recharge Successfully thai gayu Che!\n");
+				break;
+			case 2:
+				printf("\nTamaru Top up Recharge Successfully thai gayu che!\n");
+				break;
+			case 3:
+				printf("\nTamaru Special Prakar Nu Recharge Successfully thai gayu che!\n");
+				break;
+		   }
+		   break;
+	}
+	getch();
+}
