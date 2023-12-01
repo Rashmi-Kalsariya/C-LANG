@@ -1,25 +1,31 @@
 /*
 
-* * * * *
-*       *
-* * * * *
 *       *
 *       *
 *       *
+*       *
+*   *   *
+* *   * *
+*       *
+
 */
 
 #include<stdio.h>
 #include<conio.h>
 main()
 {
-	char i,j;
+	int i,j;
 	clrscr();
 
-	for(i=1; i<=6; i++)
+	for(i=1;i<=7;i++)
 	{
-		for(j=1; j<=5; j++)
+		for(j=1;j<=5;j++)
 		{
-			if(i==1||i==3||j==1||j==5||j==6)
+			if(
+				((j==1||j==5) && (i>=1 && i<=7)) ||
+				((i==6) && (j==2||j==4)) ||
+				((i==5) && (j==3))
+			  )
 			{
 				printf("* ");
 			}
@@ -30,5 +36,6 @@ main()
 		}
 		printf("\n");
 	}
+
 	getch();
 }
