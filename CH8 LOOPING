@@ -1,0 +1,102 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int i=1;
+	clrscr();
+
+	while(i <= 10)
+	{
+		printf("%d",i);
+		i++;
+	}
+	getch();
+}
+
+
+
+    SECOND PROGRAM
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int i=10;
+	clrscr();
+
+	while(i >= 1)
+	{
+		printf("%d",i);
+		i--;
+	}
+	getch();
+}
+
+
+    THIRD PROGRAM
+
+#include<stdio.h>
+#include<conio.h>
+
+main()
+{
+	 int i=1,n;
+	 clrscr();
+
+	 printf("Enter Ending point: ");
+	 scanf("%d",&n);
+
+	 while(i <= n)
+	 {
+		printf("%d ",i);
+		i++;
+	 }
+
+	  getch();
+ }
+
+      FOURTH PROGRAM
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int i;
+	clrscr();
+	printf("Enter Ending Number:");
+	scanf("%d",&i);
+
+	while(i>=1)
+	{
+		if(i%2==1)
+	{
+		printf("%d",i);
+	}
+	i--;
+	}
+	getch();
+}
+
+      FIFTH PROGRAM
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int first,last;
+	clrscr();
+	printf("Enter first year:");
+	scanf("%d",&first);
+	printf("Enter last year:");
+	scanf("%d",&last);
+
+	while(last >= first)
+	{
+		if(first%4==0)
+		{
+		printf("%d\n",first);
+		}
+		first++;
+	}
+   getch();
+}
