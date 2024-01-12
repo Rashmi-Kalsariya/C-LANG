@@ -1,0 +1,6 @@
+ID		Name		price		Qty		Discount
+123		laptop		12		2		20.00
+456		tablet		34		3		30.00
+ID		Name		price		Qty		Discount
+123		laptop		12		2		20.00
+456		tablet		34		3		30.00
